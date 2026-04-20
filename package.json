@@ -1,0 +1,26 @@
+{
+  "name": "hotel-reservation-app",
+  "version": "1.0.0",
+  "description": "Aplicación de reservación de hoteles — Proyecto Colaborativo",
+  "main": "backend/app.js",
+  "scripts": {
+    "start": "node backend/app.js",
+    "dev": "node backend/app.js",
+    "test": "jest --verbose --forceExit",
+    "test:unit": "jest tests/unit --verbose",
+    "test:integration": "jest tests/integration --verbose --forceExit",
+    "db:init": "node -e \"require('./database/connection')\""
+  },
+  "keywords": ["hotel", "reservation", "booking", "nodejs", "express"],
+  "author": "Juan José Zapata Torres",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
